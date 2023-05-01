@@ -67,10 +67,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DetailsForm.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="LoginForm.aspx" />
+    <Content Include="PrintPage.aspx" />
+    <Content Include="RegisterForm.aspx" />
+    <Content Include="viewdetails.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectionClass.cs" />
+    <Compile Include="DetailsForm.aspx.cs">
+      <DependentUpon>DetailsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailsForm.aspx.designer.cs">
+      <DependentUpon>DetailsForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPage.aspx.cs">
+      <DependentUpon>PrintPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintPage.aspx.designer.cs">
+      <DependentUpon>PrintPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.aspx.cs">
+      <DependentUpon>RegisterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.aspx.designer.cs">
+      <DependentUpon>RegisterForm.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

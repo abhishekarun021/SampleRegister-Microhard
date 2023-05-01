@@ -147,7 +147,9 @@
                     <td class="auto-style3">
                         <asp:Button ID="RegisterButton" runat="server" OnClick="RegisterButton_Click" Text="Register" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/HomePage.aspx">Go Back</asp:LinkButton>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>

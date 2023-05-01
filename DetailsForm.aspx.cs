@@ -67,5 +67,28 @@ namespace Student
             GridView1.EditIndex = -1;
             Grid_Bind();
         }
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Select")
+            {
+                int index=Convert.ToInt32(e.CommandArgument);
+
+                GridViewRow row = GridView1.Rows[index];
+
+                string id = row.Cells[0].Text;
+                string code = row.Cells[1].Text;
+                string name = row.Cells[2].Text;
+                string address = row.Cells[3].Text;
+                string email = row.Cells[4].Text;
+                string phone = row.Cells[5].Text;
+                string joindate = row.Cells[6].Text;
+
+
+                Session["SelectedRow"] = new List<string> { id, code, name, address, email, phone, joindate };
+
+                Response.Redirect("PrintPage.aspx");
+            }
+        }
     }
 }

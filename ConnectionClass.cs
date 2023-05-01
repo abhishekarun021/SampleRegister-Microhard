@@ -42,5 +42,17 @@ namespace Student
             con.Close();
             return s;
         }
+        public DataSet Fn_DataSet(string query)
+        {
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            return ds;
+        }
     }
 }

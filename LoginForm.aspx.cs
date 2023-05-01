@@ -17,11 +17,11 @@ namespace Student
 
         protected void LoginButton_Click(object sender, EventArgs e)
         {
-            string cid = obj.Fn_Scalar("select count(Id) from usertab where Username='" + unaTextBox + "' and Password='" + pwdTextBox + "'");
+            string cid = obj.Fn_Scalar("select count(Id) from usertab where Username='" + unaTextBox.Text + "' and Password='" + pwdTextBox.Text + "'");
 
             if (cid == "1")
             {
-                Response.Redirect("RegisterForm.aspx");
+                Response.Redirect("HomePage.aspx");
             }
             else
             {
